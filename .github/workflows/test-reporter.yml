@@ -1,0 +1,15 @@
+name: Test Report
+
+on:
+  workflow_dispatch:
+
+jobs:
+  gen-test-report:
+    runs-on: ubuntu-latest
+    steps:
+      - name: JUnitTest
+        uses: EnricoMi/publish-unit-test-result-action@v2
+        if: always()    # run this step even if previous step failed
+        with:
+          files: |
+            test-reports/latest/test-report.xml

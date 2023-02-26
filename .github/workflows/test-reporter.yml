@@ -5,6 +5,9 @@ on:
 
 jobs:
   gen-test-report:
+    permissions: write-all
+    name: print-token
+    environment: dev
     runs-on: ubuntu-latest
     steps:
       - name: Setup Repo

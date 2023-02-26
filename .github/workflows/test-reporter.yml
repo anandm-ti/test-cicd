@@ -7,6 +7,9 @@ jobs:
   gen-test-report:
     runs-on: ubuntu-latest
     steps:
+      - name: Setup Repo
+        uses: actions/checkout@v2
+        
       - name: JUnitTest
         uses: EnricoMi/publish-unit-test-result-action@v2
         if: always()    # run this step even if previous step failed

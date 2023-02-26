@@ -15,6 +15,6 @@ jobs:
         if: always()    # run this step even if previous step failed
         with:
           name: sample tests
-          path: test-reporst/latest/test-report.xml
+          path: test-reports/latest/test-report.xml
           reporter: jest-junit
           

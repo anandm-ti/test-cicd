@@ -16,5 +16,5 @@ jobs:
         with:
           name: sample tests
           path: test-reports/latest/test-report.xml
-          reporter: jest-junit
+          reporter: java-junit
           
